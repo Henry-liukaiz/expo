@@ -9,4 +9,5 @@ import lombok.Setter;
 @Setter
 @Getter
 public class User {
+    private String useerName;
 }
