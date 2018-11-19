@@ -3,7 +3,7 @@
     <property name="encoding" value="UTF-8" />
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/expo-service.log</file>
+        <file>logs/expo-sso-service.log</file>
         <Append>true</Append>
         <prudent>false</prudent>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -12,7 +12,7 @@
             </pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>logs/expo-serivce.log.%d{yyyy-MM-dd}.%i</fileNamePattern>>
+            <fileNamePattern>logs/expo-sso-serivce.log.%d{yyyy-MM-dd}.%i</fileNamePattern>>
             <maxFileSize>256MB</maxFileSize>
             <maxHistory>15</maxHistory>
             <totalSizeCap>32GB</totalSizeCap>
@@ -32,7 +32,7 @@
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>WARN</level>
         </filter>
-        <file>logs/expo-service-slow.log</file>
+        <file>logs/expo-sso-service-slow.log</file>
         <prudent>false</prudent>
         <Append>true</Append>
         <encoder>
@@ -43,7 +43,7 @@
         </encoder>
         <rollingPolicy
                 class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>logs/expo-service-slow.log.%d{yyyy-MM-dd}.%i
+            <fileNamePattern>logs/expo-sso-service-slow.log.%d{yyyy-MM-dd}.%i
             </fileNamePattern>
             <maxFileSize>64MB</maxFileSize>
             <maxHistory>15</maxHistory>

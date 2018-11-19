@@ -1,5 +1,5 @@
 server:
-  port: 10022
+  port: 10001
   tomcat:
     max-threads: 200
     max-connections: 200
@@ -9,7 +9,7 @@ server:
 
 spring:
   application:
-    name: expo-service
+    name: expo-sso-service
   profiles:
     active: dev
 
