@@ -1,0 +1,580 @@
+2018-11-18/16:09:11.951||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2140 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:09:11.956||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:09:12.882||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:09:12.966||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:09:12.973||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:09:13.143||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2018-11-18/16:09:13.617||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.ReplicationDriver
+2018-11-18/16:09:13.629||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:09:13.646||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.ReplicationDriver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.ReplicationDriver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:620)
+	... 18 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.ReplicationDriver
+	at org.springframework.util.Assert.state(Assert.java:94)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:224)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:176)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:43)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 19 common frames omitted
+2018-11-18/16:10:23.575||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2192 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:10:23.586||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:10:24.246||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:10:24.312||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:10:24.316||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:10:24.397||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2018-11-18/16:10:25.573||||^_^|[main] INFO  com.expo.ExpoApplication 59 - Started ExpoApplication in 3.069 seconds (JVM running for 5.621)
+2018-11-18/16:12:33.273||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2217 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:12:33.279||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:12:34.064||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:12:34.329||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:12:34.347||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:12:34.387||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2018-11-18/16:12:35.787||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2018-11-18/16:12:35.814||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:12:35.825||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:779)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:711)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 14 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/springframework/http/client/support/BasicAuthenticationInterceptor;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:774)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.client.support.BasicAuthenticationInterceptor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 common frames omitted
+2018-11-18/16:13:39.670||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2232 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:13:39.676||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:13:40.390||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:13:40.531||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:13:40.535||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:13:40.581||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2018-11-18/16:13:41.917||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2018-11-18/16:13:41.942||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:13:41.952||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:779)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:711)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 14 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/springframework/http/client/support/BasicAuthenticationInterceptor;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:774)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.client.support.BasicAuthenticationInterceptor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 common frames omitted
+2018-11-18/16:16:40.325||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2267 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:16:40.329||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:16:41.100||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:16:41.242||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:16:41.255||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:16:41.341||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2018-11-18/16:20:47.641||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2018-11-18/16:20:47.678||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:20:47.687||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:779)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:711)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 14 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/springframework/http/client/support/BasicAuthenticationInterceptor;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:774)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.client.support.BasicAuthenticationInterceptor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 common frames omitted
+2018-11-18/16:20:55.989||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2352 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:20:55.995||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:20:56.913||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:20:57.002||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:20:57.005||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:20:57.024||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2018-11-18/16:20:57.437||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2018-11-18/16:20:57.444||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:20:57.454||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:620)
+	... 18 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:94)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:224)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:176)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:43)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 19 common frames omitted
+2018-11-18/16:23:26.489||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2370 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:23:26.494||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:23:27.122||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:23:27.211||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:23:27.213||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:23:27.232||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2018-11-18/16:23:27.633||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2018-11-18/16:23:27.642||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:23:27.656||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:620)
+	... 18 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:94)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:224)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:176)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:43)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 19 common frames omitted
+2018-11-18/16:24:07.138||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2382 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:24:07.142||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:24:07.824||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:24:07.909||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:24:07.912||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:24:07.929||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2018-11-18/16:24:08.770||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2018-11-18/16:24:08.788||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:24:08.795||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:779)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:711)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 14 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/springframework/http/client/support/BasicAuthenticationInterceptor;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:774)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.client.support.BasicAuthenticationInterceptor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 common frames omitted
+2018-11-18/16:24:36.315||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2388 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:24:36.329||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:24:37.110||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:24:37.178||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:24:37.256||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:24:37.294||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2018-11-18/16:24:38.341||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2018-11-18/16:24:38.377||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:24:38.393||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:779)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:711)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 14 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/springframework/http/client/support/BasicAuthenticationInterceptor;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:774)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.client.support.BasicAuthenticationInterceptor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 common frames omitted
+2018-11-18/16:27:55.397||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2417 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:27:55.408||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:27:56.197||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:27:56.311||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:27:56.314||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:27:56.334||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2018-11-18/16:28:27.915||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2018-11-18/16:28:27.963||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:28:27.975||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:779)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:711)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 14 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/springframework/http/client/support/BasicAuthenticationInterceptor;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:774)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.client.support.BasicAuthenticationInterceptor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 common frames omitted
+2018-11-18/16:32:38.838||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2469 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:32:38.844||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:32:39.442||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:32:39.495||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:32:39.543||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:32:39.569||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2018-11-18/16:32:40.489||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2018-11-18/16:32:40.523||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:32:40.534||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:779)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:711)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 14 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/springframework/http/client/support/BasicAuthenticationInterceptor;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:774)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.client.support.BasicAuthenticationInterceptor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 common frames omitted
+2018-11-18/16:34:01.135||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2497 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:34:01.143||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:34:01.867||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:34:01.923||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:34:01.927||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:34:01.952||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2018-11-18/16:34:03.112||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2018-11-18/16:34:03.146||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 142 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:34:03.162||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:779)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:711)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 14 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/springframework/http/client/support/BasicAuthenticationInterceptor;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:774)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.client.support.BasicAuthenticationInterceptor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 common frames omitted
+2018-11-18/16:35:06.829||||^_^|[main] INFO  com.expo.ExpoApplication 50 - Starting ExpoApplication on liukais-MacBook-Pro.local with PID 2510 (/Users/liukai/IdeaProjects/expo/target/classes started by liukai in /Users/liukai/IdeaProjects/expo)
+2018-11-18/16:35:06.833||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:35:07.506||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:35:07.552||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18/16:35:07.557||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18/16:35:07.574||||^_^|[main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate 182 - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2018-11-18/16:35:08.620||||^_^|[main] WARN  o.s.c.a.AnnotationConfigApplicationContext 554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2018-11-18/16:35:08.651||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 142 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18/16:35:08.667||||^_^|[main] ERROR org.springframework.boot.SpringApplication 858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplateBuilder' defined in class path resource [org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.expo.ExpoApplication.main(ExpoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.client.RestTemplateBuilder] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:779)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:711)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 14 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/springframework/http/client/support/BasicAuthenticationInterceptor;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:774)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.client.support.BasicAuthenticationInterceptor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 common frames omitted
