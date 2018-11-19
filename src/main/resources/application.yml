@@ -1,0 +1,17 @@
+server:
+  port: 10022
+  tomcat:
+    max-threads: 200
+    max-connection: 200
+    min-spare-threads: 50
+    accept-count: 1000
+    uri-encoding: UTF-8
+    session-timeout: 10
+
+spring:
+  profiles:
+    active: dev
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

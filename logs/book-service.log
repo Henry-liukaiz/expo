@@ -1,0 +1,56 @@
+2018-11-18/16:44:12.761||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bc6d854c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18/16:44:13.069||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:44:13.841||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:44:14.336||||^_^|[main] INFO  o.springframework.cloud.context.scope.GenericScope 294 - BeanFactory id=cc576ecf-8259-3222-987a-6f7fb74d97a8
+2018-11-18/16:44:14.399||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a053824f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18/16:44:14.421||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bc6d854c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18/16:44:14.876||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 90 - Tomcat initialized with port(s): 10022 (http)
+2018-11-18/16:44:14.894||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-10022"]
+2018-11-18/16:44:14.900||||^_^|[main] INFO  org.apache.catalina.core.StandardService 173 - Starting service [Tomcat]
+2018-11-18/16:44:14.900||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 173 - Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18/16:44:14.908||||^_^|[main] INFO  org.apache.catalina.core.AprLifecycleListener 173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liukai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-18/16:44:15.049||||^_^|[main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2018-11-18/16:44:15.050||||^_^|[main] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1964 ms
+2018-11-18/16:44:15.844||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18/16:44:15.847||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-11-18/16:44:15.848||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18/16:44:15.848||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18/16:44:15.849||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18/16:44:15.849||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'httpTraceFilter' to: [/*]
+2018-11-18/16:44:15.850||||^_^|[main] INFO  o.s.boot.web.servlet.ServletRegistrationBean 186 - Servlet dispatcherServlet mapped to [/]
+2018-11-18/16:44:16.118||||^_^|[main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor 171 - Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18/16:44:16.788||||^_^|[main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver 59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-11-18/16:44:16.899||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-10022"]
+2018-11-18/16:44:16.920||||^_^|[main] INFO  org.apache.tomcat.util.net.NioSelectorPool 173 - Using a shared selector for servlet write/read
+2018-11-18/16:44:16.944||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 204 - Tomcat started on port(s): 10022 (http) with context path ''
+2018-11-18/16:44:16.947||||^_^|[main] INFO  com.expo.ExpoApplication 59 - Started ExpoApplication in 5.384 seconds (JVM running for 7.451)
+2018-11-18/16:45:48.203||||^_^|[http-nio-10022-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18/16:45:48.203||||^_^|[http-nio-10022-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet 521 - Initializing Servlet 'dispatcherServlet'
+2018-11-18/16:45:48.218||||^_^|[http-nio-10022-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet 543 - Completed initialization in 14 ms
+2018-11-18/16:49:12.519||||^_^|[Thread-20] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor 208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18/16:51:16.391||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$94592550] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18/16:51:16.696||||^_^|[main] INFO  com.expo.ExpoApplication 679 - The following profiles are active: dev
+2018-11-18/16:51:17.522||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.expo]' package. Please check your configuration.
+2018-11-18/16:51:18.025||||^_^|[main] INFO  o.springframework.cloud.context.scope.GenericScope 294 - BeanFactory id=25f5b622-5666-32ad-aecc-17e69245e1ef
+2018-11-18/16:51:18.083||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$783f2253] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18/16:51:18.103||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$94592550] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18/16:51:18.502||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 90 - Tomcat initialized with port(s): 10022 (http)
+2018-11-18/16:51:18.516||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-10022"]
+2018-11-18/16:51:18.521||||^_^|[main] INFO  org.apache.catalina.core.StandardService 173 - Starting service [Tomcat]
+2018-11-18/16:51:18.522||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 173 - Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18/16:51:18.528||||^_^|[main] INFO  org.apache.catalina.core.AprLifecycleListener 173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liukai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-18/16:51:18.661||||^_^|[main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2018-11-18/16:51:18.662||||^_^|[main] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1948 ms
+2018-11-18/16:51:19.432||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18/16:51:19.442||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-11-18/16:51:19.443||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18/16:51:19.443||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18/16:51:19.446||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18/16:51:19.455||||^_^|[main] INFO  o.s.boot.web.servlet.FilterRegistrationBean 248 - Mapping filter: 'httpTraceFilter' to: [/*]
+2018-11-18/16:51:19.456||||^_^|[main] INFO  o.s.boot.web.servlet.ServletRegistrationBean 186 - Servlet dispatcherServlet mapped to [/]
+2018-11-18/16:51:20.006||||^_^|[main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor 171 - Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18/16:51:20.555||||^_^|[main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver 59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-11-18/16:51:20.673||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-10022"]
+2018-11-18/16:51:20.698||||^_^|[main] INFO  org.apache.tomcat.util.net.NioSelectorPool 173 - Using a shared selector for servlet write/read
+2018-11-18/16:51:20.727||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 204 - Tomcat started on port(s): 10022 (http) with context path ''
+2018-11-18/16:51:20.730||||^_^|[main] INFO  com.expo.ExpoApplication 59 - Started ExpoApplication in 5.795 seconds (JVM running for 7.371)
