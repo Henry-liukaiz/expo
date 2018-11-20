@@ -26,7 +26,7 @@ public class User {
 
     private String portrait;        //头像
 
-    private Date create_time;       //创建时间
+    private Date createTime;        //创建时间
 
-    private Date update_time;       //更新时间
+    private Date updateTime;        //更新时间
 }

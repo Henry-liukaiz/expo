@@ -13,3 +13,7 @@ spring:
     zookeeper:
       connect-string: 139.199.26.103:2181
 
+# 打印sql
+logging:
+  level:
+    com.expo.sso.dao: DEBUG

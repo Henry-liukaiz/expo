@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.expo.sso.dao.UserMapper">
+    <resultMap id="BaseResultMap" type="com.expo.entity.domain.User">
+        <id column="id" property="id"/>
+        <result column="user_name" property="userName"/>
+        <result column="vser_name" property="vserName"/>
+        <result column="password" property="password"/>
+        <result column="email" property="email"/>
+        <result column="gender" property="gender"/>
+        <result column="status" property="status"/>
+        <result column="last_login_date_time" property="lastLoginDateTime"/>
+        <result column="mobile" property="mobile"/>
+        <result column="portrait" property="portrait"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <sql id="select">
+        id,user_name,vser_name,email,gender,status,last_login_date_time,mobile,portrait,create_time,update_time
+    </sql>
+
+    <select id="login" resultMap="BaseResultMap">
+        SELECT id,user_name,vser_name FROM user WHERE status = '1' and (user_name =
+		#{userName} or email = #{userName}) and password = #{password}
+    </select>
+
+    <insert id="register" useGeneratedKeys="true" keyProperty="id">
+        insert into user(
+            <if test="userName != null">
+                user_name
+            </if>
+            <if test="vserName != null">
+                ,vser_name
+            </if>
+            <if test="password != null">
+                ,password
+            </if>
+            <if test="email != null">
+                ,email
+            </if>
+            <if test="gender != null">
+                ,gender
+            </if>
+            <if test="status != null">
+                ,status
+            </if>
+            <if test="lastLoginDateTime != null">
+                ,last_login_date_time
+            </if>
+            <if test="mobile != null">
+                ,mobile
+            </if>
+            <if test="portrait != null">
+                ,portrait
+            </if>
+            <if test="createTime != null">
+                ,create_time
+            </if>
+            <if test="updateTime != null">
+                ,update_time
+            </if>
+        )
+        values(
+            <if test="userName != null">
+                #{userName}
+            </if>
+            <if test="vserName != null">
+                ,#{vserName}
+            </if>
+            <if test="password != null">
+                ,#{password}
+            </if>
+            <if test="email != null">
+                ,#{email}
+            </if>
+            <if test="gender != null">
+                ,#{gender}
+            </if>
+            <if test="status != null">
+                ,#{status}
+            </if>
+            <if test="lastLoginDateTime!= null">
+                ,#{lastLoginDateTime}
+            </if>
+            <if test="mobile != null">
+                ,#{mobile}
+            </if>
+            <if test="portrait != null">
+                ,#{portrait}
+            </if>
+            <if test="createTime != null">
+                ,#{createTime}
+            </if>
+            <if test="updateTime != null">
+                ,#{updateTime}
+            </if>
+        )
+    </insert>
+</mapper>
