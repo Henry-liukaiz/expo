@@ -10,4 +10,6 @@ public interface UserMapper {
     User login(User user);
 
     int register(User user);
+
+    User autoLogin(User user);
 }

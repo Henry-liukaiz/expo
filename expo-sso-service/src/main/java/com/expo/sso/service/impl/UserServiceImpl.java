@@ -21,4 +21,9 @@ public class UserServiceImpl implements UserService {
     public int register(User user) {
         return userMapper.register(user);
     }
+
+    @Override
+    public User autoLogin(User user) {
+        return userMapper.autoLogin(user);
+    }
 }

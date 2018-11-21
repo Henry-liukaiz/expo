@@ -21,80 +21,93 @@
     </sql>
 
     <select id="login" resultMap="BaseResultMap">
-        SELECT id,user_name,vser_name FROM user WHERE status = '1' and (user_name =
-		#{userName} or email = #{userName}) and password = #{password}
+        SELECT
+          id,user_name,vser_name,portrait
+        FROM user
+        WHERE status = '1'
+          and (user_name = #{userName} or email = #{userName})
+          and password = #{password}
     </select>
 
     <insert id="register" useGeneratedKeys="true" keyProperty="id">
         insert into user(
-            <if test="userName != null">
-                user_name
-            </if>
-            <if test="vserName != null">
-                ,vser_name
-            </if>
-            <if test="password != null">
-                ,password
-            </if>
-            <if test="email != null">
-                ,email
-            </if>
-            <if test="gender != null">
-                ,gender
-            </if>
-            <if test="status != null">
-                ,status
-            </if>
-            <if test="lastLoginDateTime != null">
-                ,last_login_date_time
-            </if>
-            <if test="mobile != null">
-                ,mobile
-            </if>
-            <if test="portrait != null">
-                ,portrait
-            </if>
-            <if test="createTime != null">
-                ,create_time
-            </if>
-            <if test="updateTime != null">
-                ,update_time
-            </if>
+        <if test="userName != null">
+            user_name
+        </if>
+        <if test="vserName != null">
+            ,vser_name
+        </if>
+        <if test="password != null">
+            ,password
+        </if>
+        <if test="email != null">
+            ,email
+        </if>
+        <if test="gender != null">
+            ,gender
+        </if>
+        <if test="status != null">
+            ,status
+        </if>
+        <if test="lastLoginDateTime != null">
+            ,last_login_date_time
+        </if>
+        <if test="mobile != null">
+            ,mobile
+        </if>
+        <if test="portrait != null">
+            ,portrait
+        </if>
+        <if test="createTime != null">
+            ,create_time
+        </if>
+        <if test="updateTime != null">
+            ,update_time
+        </if>
         )
         values(
-            <if test="userName != null">
-                #{userName}
-            </if>
-            <if test="vserName != null">
-                ,#{vserName}
-            </if>
-            <if test="password != null">
-                ,#{password}
-            </if>
-            <if test="email != null">
-                ,#{email}
-            </if>
-            <if test="gender != null">
-                ,#{gender}
-            </if>
-            <if test="status != null">
-                ,#{status}
-            </if>
-            <if test="lastLoginDateTime!= null">
-                ,#{lastLoginDateTime}
-            </if>
-            <if test="mobile != null">
-                ,#{mobile}
-            </if>
-            <if test="portrait != null">
-                ,#{portrait}
-            </if>
-            <if test="createTime != null">
-                ,#{createTime}
-            </if>
-            <if test="updateTime != null">
-                ,#{updateTime}
-            </if>
+        <if test="userName != null">
+            #{userName}
+        </if>
+        <if test="vserName != null">
+            ,#{vserName}
+        </if>
+        <if test="password != null">
+            ,#{password}
+        </if>
+        <if test="email != null">
+            ,#{email}
+        </if>
+        <if test="gender != null">
+            ,#{gender}
+        </if>
+        <if test="status != null">
+            ,#{status}
+        </if>
+        <if test="lastLoginDateTime!= null">
+            ,#{lastLoginDateTime}
+        </if>
+        <if test="mobile != null">
+            ,#{mobile}
+        </if>
+        <if test="portrait != null">
+            ,#{portrait}
+        </if>
+        <if test="createTime != null">
+            ,#{createTime}
+        </if>
+        <if test="updateTime != null">
+            ,#{updateTime}
+        </if>
         )
     </insert>
+
+
+    <select id="autoLogin" resultMap="BaseResultMap">
+        select
+          id,user_name,vser_name,portrait
+        from user
+        where id = #{id}
+          and status = '1'
+    </select>
 </mapper>

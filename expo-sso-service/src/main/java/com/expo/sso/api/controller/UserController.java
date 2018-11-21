@@ -29,5 +29,13 @@ public class UserController {
                 ? BaseResponseBuilder.buildBaseResponse(ReturnCode.ERROR)
                 : BaseResponseBuilder.buildBaseResponse(ReturnCode.SUCCESS, user);
     }
+
+    @PostMapping("/autoLogin")
+    public BaseResponse<?> autoLogin(@RequestBody User user){
+        User u = userService.autoLogin(user);
+        return u == null
+                ? BaseResponseBuilder.buildBaseResponse(ReturnCode.ERROR)
+                : BaseResponseBuilder.buildBaseResponse(ReturnCode.SUCCESS, user);
+    }
 }
 

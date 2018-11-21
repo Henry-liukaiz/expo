@@ -17,4 +17,7 @@ public interface FeignUserService {
 
     @PostMapping("/api/user/register")
     BaseResponse<?> register(@RequestBody User user);
+
+    @PostMapping("/api/user/autoLogin")
+    BaseResponse<?> autoLogin(@RequestBody User user);
 }
